@@ -22,7 +22,75 @@
         border-radius: 2rem;
         margin: 1.3rem 1rem;
         position: relative;
-        // outline: 10px solid $color-white;
+
+        &--body{
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 40rem;
+        }
+
+
+        &--msg1,
+        &--msg2,
+        &--msg6{
+
+            background-color: rgba($color-sub-heading,.25);
+            display: inline-block;
+            padding: 1rem;
+            width: 17rem;
+            border-radius: 1rem 9px 9px 0;
+            color: $color-chat-left;
+        }
+        &--msg3,
+        &--msg4,
+        &--msg5{
+            align-self: flex-end;
+        }
+
+        &--msg4,
+        &--msg5{
+            background-color: $color-white;
+            display: inline-block;
+            padding: 1rem;
+            width: 17rem;
+            border-radius:9px 9px 0 1rem;
+            color: #000;
+            box-shadow: 0 1rem 2rem rgba(#000,.15);
+        }
+
+        &--msg5{
+            width: auto;
+        }
+
+        &--msg7,
+        &--msg8{
+            display: flex;
+            width: 20rem;
+            background: linear-gradient(to right bottom,$color-light-magenta-button,$color-light-violet);
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-radius: 1rem 9px 9px 0;
+            color: $color-white;
+
+            & > *{
+                margin: 0 .5rem;
+            }
+
+            &__block1{
+                display: flex;
+                align-items: center;
+                flex: 0 1 55%;
+            }
+
+
+
+
+
+        }
+
 
 
         &--upper-white{
@@ -56,6 +124,8 @@
             }
 
 
+
+
             &__leftside{
                 display: flex;
                 align-items: center;
@@ -67,6 +137,7 @@
             height: 2rem;
             width: 2rem;
             fill: $color-white;
+
         }
         &--icon2{
             height: 1rem;
@@ -84,6 +155,8 @@
             border-radius: 100px;
             border: 1px solid $color-white;
         }
+
+
 
 
 
