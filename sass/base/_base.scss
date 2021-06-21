@@ -11,6 +11,10 @@ html{
     box-sizing: border-box;
     font-family: "Rubic",sans-serif;
 
+    @include response(Large-screen) {
+        font-size: 55%;
+    }
+
 }
 body{
     background-color:$color-light-grayish-violet;

@@ -1,27 +1,40 @@
 .main-section{
     display: flex;
-    // background-color: orange;
-    width: 75%;
+    width: 95rem;
     z-index: 1;
 
     &__leftside{
         background-color: $color-white;
-        height: 55rem;
-        width: 28rem;
-        // flex: 0 1 20%;
+        height: auto;
+        width: 30rem;
         border-radius: 3rem;
         box-shadow: 0 1rem 2rem rgba(#000,.15);
+
+
 
 
     }
 
     &__layout{
-        height:96%;
-        width: auto;
         background-color: $color-light-grayish-violet;
         border-radius: 2rem;
         margin: 1.3rem 1rem;
         position: relative;
+
+        @include response(Large-screen) {
+           height: inherit;
+        }
+
+        & > * {
+
+            @include response(Large-screen) {
+                width: auto;
+             }
+        }
+
+
+
+
 
         &--body{
             margin: 1rem;
@@ -29,6 +42,19 @@
             flex-direction: column;
             justify-content: space-around;
             height: 40rem;
+        }
+
+        &--end{
+            margin: 0 1rem;
+
+
+            & > * {
+                display: flex;
+                align-items: center;
+
+            }
+
+
         }
 
 
@@ -67,7 +93,7 @@
         &--msg7,
         &--msg8{
             display: flex;
-            width: 20rem;
+            width: 19rem;
             background: linear-gradient(to right bottom,$color-light-magenta-button,$color-light-violet);
             align-items: center;
             justify-content: space-between;
@@ -109,7 +135,7 @@
 
         &--top-content{
             background:linear-gradient(to left bottom, $color-light-magenta-button,$color-light-violet);
-            height: 8rem;
+            height: 6.5rem;
             border-radius: 1rem;
             display: flex;
             justify-content: space-between;
@@ -170,6 +196,10 @@
         width: 55rem;
         margin-left: 15rem;
 
+
+        @include response(Large-screen) {
+            margin-left: 10;
+        }
 
 
     }

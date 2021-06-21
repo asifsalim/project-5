@@ -1,0 +1,7 @@
+@mixin  response ($breakpoint) {
+
+    @if $breakpoint == Large-screen {
+        @media (max-width: 1300px) { @content };
+    }
+
+}

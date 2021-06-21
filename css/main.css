@@ -14,6 +14,12 @@ html {
   font-family: "Rubic",sans-serif;
 }
 
+@media (max-width: 1300px) {
+  html {
+    font-size: 55%;
+  }
+}
+
 body {
   background-color: #f5f3f7;
   position: relative;
@@ -73,30 +79,75 @@ body {
   margin-right: 1rem;
 }
 
+.layout-end {
+  height: 2.6rem;
+  width: 2.6rem;
+  fill: #ffffff;
+  background: #3e2753;
+  border-radius: 100px;
+  position: absolute;
+  right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.layout-input {
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 90%;
+          flex: 1 0 90%;
+  padding: 1rem 0;
+  border-radius: 100px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.layout-input::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-left: 2rem;
+  color: #c6cacd;
+}
+
+@media (max-width: 1300px) {
+  .layout-input {
+    margin-bottom: 1rem;
+  }
+}
+
 .main-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 75%;
+  width: 95rem;
   z-index: 1;
 }
 
 .main-section__leftside {
   background-color: #ffffff;
-  height: 55rem;
-  width: 28rem;
+  height: auto;
+  width: 30rem;
   border-radius: 3rem;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
 .main-section__layout {
-  height: 96%;
-  width: auto;
   background-color: #f5f3f7;
   border-radius: 2rem;
   margin: 1.3rem 1rem;
   position: relative;
+}
+
+@media (max-width: 1300px) {
+  .main-section__layout {
+    height: inherit;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main-section__layout > * {
+    width: auto;
+  }
 }
 
 .main-section__layout--body {
@@ -111,6 +162,19 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 40rem;
+}
+
+.main-section__layout--end {
+  margin: 0 1rem;
+}
+
+.main-section__layout--end > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-section__layout--msg1, .main-section__layout--msg2, .main-section__layout--msg6 {
@@ -146,7 +210,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 20rem;
+  width: 19rem;
   background: -webkit-gradient(linear, left top, right bottom, from(#e570ff), to(#8838ff));
   background: linear-gradient(to right bottom, #e570ff, #8838ff);
   -webkit-box-align: center;
@@ -190,7 +254,7 @@ body {
 .main-section__layout--top-content {
   background: -webkit-gradient(linear, right top, left bottom, from(#e570ff), to(#8838ff));
   background: linear-gradient(to left bottom, #e570ff, #8838ff);
-  height: 8rem;
+  height: 6.5rem;
   border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,13 +322,18 @@ body {
   margin-left: 15rem;
 }
 
+@media (max-width: 1300px) {
+  .main-section__rightside {
+    margin-left: 10;
+  }
+}
+
 .left-background {
   height: 75vh;
-  width: 55rem;
+  width: 40rem;
   background: -webkit-gradient(linear, right top, left bottom, from(#e570ff), to(#8838ff));
   background: linear-gradient(to left bottom, #e570ff, #8838ff);
-  border-end-start-radius: 50rem;
-  border-end-end-radius: 50rem;
+  border-radius: 0 0 55rem 55rem;
   position: absolute;
   top: 0;
   left: -8%;
@@ -275,7 +344,7 @@ body {
   width: 45rem;
   background: rgba(62, 39, 83, 0.05);
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   right: -9%;
   border-start-end-radius: 50rem;
   border-start-start-radius: 50rem;

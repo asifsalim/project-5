@@ -10,3 +10,37 @@
     fill: rgba($color-white,.25);
     margin-right: 1rem;
 }
+
+.layout-end{
+    height: 2.6rem;
+    width: 2.6rem;
+    fill: $color-white;
+    background: $color-dark-violet;
+    border-radius: 100px;
+    position: absolute;
+    right: 1.5rem;
+    margin-bottom: 1rem;
+
+
+
+}
+
+.layout-input{
+    border: none;
+    flex: 1 0 90%;
+    padding: 1rem 0;
+    border-radius: 100px;
+    position: relative;
+    margin-bottom: 1rem;
+    &::-webkit-input-placeholder{
+        font-size: 1rem;
+        font-weight: 300;
+        padding-left: 2rem;
+        color: $color-placeholder-text;
+
+    }
+
+    @include response(Large-screen) {
+        margin-bottom: 1rem;
+    }
+}

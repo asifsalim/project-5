@@ -1,9 +1,10 @@
 .left-background{
     height: 75vh;
-    width: 55rem;
+    width: 40rem;
     background:linear-gradient(to left bottom, $color-light-magenta-button,$color-light-violet);
-    border-end-start-radius:50rem;
-    border-end-end-radius:50rem;
+    // border-end-start-radius:50rem;
+    // border-end-end-radius:50rem;
+    border-radius: 0 0 55rem 55rem;
     position: absolute;
     top: 0;
     left: -8%;
@@ -14,7 +15,7 @@
     width: 45rem;
     background: rgba($color-dark-violet,.05);
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     right: -9%;
     border-start-end-radius:50rem;
     border-start-start-radius:50rem;
