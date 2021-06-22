@@ -15,12 +15,23 @@ html{
         font-size: 55%;
     }
 
+    @include response (Medium-screen){
+        font-size: 45%;
+    }
+
+    @include response (Small-screen){
+        font-size: 35%;
+    }
+
 }
 body{
     background-color:$color-light-grayish-violet;
     position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+    @include response (Small-screen){
+        // height:auto;
+        width: auto;
+     }
 }

@@ -21,6 +21,10 @@
     right: 1.5rem;
     margin-bottom: 1rem;
 
+    @include response (Small-screen){
+        right: 2rem;
+    }
+
 
 
 }
@@ -32,11 +36,17 @@
     border-radius: 100px;
     position: relative;
     margin-bottom: 1rem;
+
+    @include response (Small-screen){
+       width: 26rem;
+    }
     &::-webkit-input-placeholder{
         font-size: 1rem;
         font-weight: 300;
         padding-left: 2rem;
         color: $color-placeholder-text;
+
+
 
     }
 

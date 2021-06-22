@@ -8,6 +8,19 @@
     position: absolute;
     top: 0;
     left: -8%;
+
+    @include response (Medium-screen){
+        height: 55vh;
+    }
+
+    @include response (Small-screen){
+        height: 45rem;
+    }
+
+    // @include response (Small-screen){
+
+
+    // }
 }
 
 .right-background{
@@ -15,8 +28,27 @@
     width: 45rem;
     background: rgba($color-dark-violet,.05);
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     right: -9%;
     border-start-end-radius:50rem;
     border-start-start-radius:50rem;
+
+    @include response (Medium-screen){
+        height: 55vh;
+        right: 0;
+    }
+
+    @include response (Small-screen){
+        height: 45rem;
+        right: 0;
+    }
+
+
+}
+
+.body-main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }

@@ -2,13 +2,26 @@
     display: flex;
     width: 95rem;
     z-index: 1;
+    @include response (Medium-screen){
+        width: 70rem;
+    }
 
+    @include response (Small-screen){
+        flex-direction: column;
+        // background-color: orange;
+        width: auto;
+        align-items: center;
+        margin-top: 5rem;
+    }
     &__leftside{
         background-color: $color-white;
         height: auto;
         width: 30rem;
         border-radius: 3rem;
         box-shadow: 0 1rem 2rem rgba(#000,.15);
+
+
+
 
 
 
@@ -198,9 +211,20 @@
 
 
         @include response(Large-screen) {
-            margin-left: 10;
+            margin-left: 10rem;
         }
 
+        @include response (Medium-screen){
+            margin-left: 7rem;
+        }
+
+        @include response (Small-screen){
+            align-items: center;
+            margin-top: 5rem;
+            width: 35rem;
+            text-align: center;
+            margin-left: 0;
+        }
 
     }
 }

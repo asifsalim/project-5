@@ -4,4 +4,12 @@
         @media (max-width: 1300px) { @content };
     }
 
+    @if $breakpoint == Medium-screen {
+        @media (max-width: 870px) { @content };
+    }
+
+    @if $breakpoint == Small-screen {
+        @media (max-width:610px) { @content };
+    }
+
 }
