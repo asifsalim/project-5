@@ -242,10 +242,13 @@
 
         @include response (Small-screen){
             align-items: center;
-            margin-top: 5rem;
+            margin: 5rem 0;
             width: 35rem;
             text-align: center;
             margin-left: 0;
+            font-family:"Rubic",sans-serif;
+            font-weight: 500;
+            line-height: 1.7;
         }
 
     }

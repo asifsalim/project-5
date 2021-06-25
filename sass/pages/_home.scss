@@ -22,15 +22,17 @@
     height: 75vh;
     width: 25rem;
     background:linear-gradient(to right bottom, $color-light-gradiant);
-    border-radius: 0 0 055rem 0;
+    border-radius:  0 0 55rem  0;
     position: absolute;
     bottom: 0;
     right: 0;
     transform:rotate(180deg);
 
     @include response(Small-screen){
+        border-radius: 55rem 0 0  0;
         width: 35%;
         height: 55%;
+        transform: translateY(24rem);
     }
 
 
@@ -48,6 +50,6 @@
     transform: translate(-50%,-50%);
 
     @include response (Small-screen){
-        max-height:85rem;
+        max-height: 55rem;
     }
 }

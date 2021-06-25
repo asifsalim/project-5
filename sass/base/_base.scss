@@ -12,7 +12,9 @@ html{
     font-family: "Rubic",sans-serif;
 
 
-
+    @include response (Xtra-Large-screen){
+        font-size: 100%;
+    }
     @include response (Medium-screen){
         font-size: 45%;
     }

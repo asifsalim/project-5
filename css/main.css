@@ -14,6 +14,12 @@ html {
   font-family: "Rubic",sans-serif;
 }
 
+@media (min-width: 1400px) {
+  html {
+    font-size: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   html {
     font-size: 45%;
@@ -82,7 +88,7 @@ body {
 
 @media (max-width: 670px) {
   .layout-end {
-    right: 2rem;
+    right: 1rem;
   }
 }
 
@@ -358,10 +364,13 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 5rem;
+    margin: 5rem 0;
     width: 35rem;
     text-align: center;
     margin-left: 0;
+    font-family: "Rubic",sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
   }
 }
 
@@ -390,7 +399,7 @@ body {
   width: 25rem;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(216, 158, 255, 0.1)));
   background: linear-gradient(to right bottom, rgba(216, 158, 255, 0.1));
-  border-radius: 0 0 055rem 0;
+  border-radius: 0 0 55rem  0;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -400,8 +409,11 @@ body {
 
 @media (max-width: 670px) {
   .right-background {
+    border-radius: 55rem 0 0  0;
     width: 35%;
     height: 55%;
+    -webkit-transform: translateY(24rem);
+            transform: translateY(24rem);
   }
 }
 
@@ -416,6 +428,6 @@ body {
 
 @media (max-width: 670px) {
   .body-main {
-    max-height: 85rem;
+    max-height: 55rem;
   }
 }
