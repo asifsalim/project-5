@@ -1,24 +1,25 @@
 .main-section{
     display: flex;
-    width: 95rem;
+    align-items: center;
     z-index: 1;
-    @include response (Medium-screen){
-        width: 70rem;
-    }
+    justify-content: space-between;
 
     @include response (Small-screen){
         flex-direction: column;
-        // background-color: orange;
-        width: auto;
-        align-items: center;
-        margin-top: 5rem;
     }
+
+
+
+
+
     &__leftside{
-        background-color: $color-white;
-        height: auto;
-        width: 30rem;
-        border-radius: 3rem;
-        box-shadow: 0 1rem 2rem rgba(#000,.15);
+        // background-color: $color-white;
+        // height: 55rem;
+        // width: 28rem;
+        // border-radius: 3rem;
+        // box-shadow: 0 1rem 2rem rgba(#000,.15);
+
+
 
 
 
@@ -31,18 +32,26 @@
     &__layout{
         background-color: $color-light-grayish-violet;
         border-radius: 2rem;
-        margin: 1.3rem 1rem;
+        max-height: 50rem;
+        height: 75%;
+        width: 25rem;
+        // margin: 1.3rem 1rem;
         position: relative;
+        border: 1rem solid $color-white;
 
-        @include response(Large-screen) {
-           height: inherit;
+
+        @include response (Medium-screen){
+            // background-color: black;
+            min-height: 56rem;
+            width: 27rem;
+
         }
+
+
 
         & > * {
 
-            @include response(Large-screen) {
-                width: auto;
-             }
+
         }
 
 
@@ -54,7 +63,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            height: 40rem;
+            height:auto;
+            font-size: 55%;
         }
 
         &--end{
@@ -78,6 +88,7 @@
             background-color: rgba($color-sub-heading,.25);
             display: inline-block;
             padding: 1rem;
+            margin: .5rem 0;
             width: 17rem;
             border-radius: 1rem 9px 9px 0;
             color: $color-chat-left;
@@ -86,6 +97,8 @@
         &--msg4,
         &--msg5{
             align-self: flex-end;
+            margin: .5rem 0;
+
         }
 
         &--msg4,
@@ -97,6 +110,7 @@
             border-radius:9px 9px 0 1rem;
             color: #000;
             box-shadow: 0 1rem 2rem rgba(#000,.15);
+
         }
 
         &--msg5{
@@ -113,6 +127,7 @@
             padding: 1rem;
             border-radius: 1rem 9px 9px 0;
             color: $color-white;
+            margin: .5rem 0;
 
             & > *{
                 margin: 0 .5rem;
@@ -139,9 +154,16 @@
             // margin: 0 auto;
             border-radius: 100px;
             position: absolute;
-            top: -1rem;
-            left: 5.7rem;
+            // margin: 0 auto;
+            top: -2%;
+            left: 50%;
+            transform: translate(-50%,-2%);
             z-index: 2;
+
+            @include response (Medium-screen){
+                top: -1.7%;
+                transform: translate(-50%,-1.7%);
+            }
 
 
         }

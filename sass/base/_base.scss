@@ -10,29 +10,19 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: "Rubic",sans-serif;
-    height:100%;
 
-    @include response(Large-screen) {
-        font-size: 55%;
-    }
+
 
     @include response (Medium-screen){
         font-size: 45%;
     }
 
-    @include response (Small-screen){
-        font-size: 35%;
-    }
 
 }
 body{
     background-color:$color-light-grayish-violet;
-    position: relative;
-    max-height: 100%;
-    width: 100%;
+    min-height: 100vh;
 
-    @include response (Small-screen){
-        // height:auto;
-        width: auto;
-     }
+
+
 }

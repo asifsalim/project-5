@@ -1,15 +1,15 @@
 @mixin  response ($breakpoint) {
 
     @if $breakpoint == Large-screen {
-        @media (max-width: 1300px) { @content };
+        @media (max-width: 1200px) { @content };
     }
 
     @if $breakpoint == Medium-screen {
-        @media (max-width: 870px) { @content };
+        @media (max-width: 900px) { @content };
     }
 
     @if $breakpoint == Small-screen {
-        @media (max-width:610px) { @content };
+        @media (max-width:670px) { @content };
     }
 
 }

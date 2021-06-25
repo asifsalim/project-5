@@ -7,48 +7,47 @@
     border-radius: 0 0 55rem 55rem;
     position: absolute;
     top: 0;
-    left: -8%;
+    left: 0;
+    transform: translate(-15%,0);
 
-    @include response (Medium-screen){
-        height: 55vh;
+    @include response(Small-screen){
+        width: 65%;
+        height: 55%;
     }
 
-    @include response (Small-screen){
-        height: 45rem;
-    }
 
-    // @include response (Small-screen){
-
-
-    // }
 }
 
 .right-background{
     height: 75vh;
-    width: 45rem;
-    background: rgba($color-dark-violet,.05);
+    width: 25rem;
+    background:linear-gradient(to right bottom, $color-light-gradiant);
+    border-radius: 0 0 055rem 0;
     position: absolute;
     bottom: 0;
-    right: -9%;
-    border-start-end-radius:50rem;
-    border-start-start-radius:50rem;
+    right: 0;
+    transform:rotate(180deg);
 
-    @include response (Medium-screen){
-        height: 55vh;
-        right: 0;
+    @include response(Small-screen){
+        width: 35%;
+        height: 55%;
     }
 
-    @include response (Small-screen){
-        height: 45rem;
-        right: 0;
-    }
+
 
 
 }
 
+
 .body-main{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    // background-color: orange;
+    max-width: 110rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    @include response (Small-screen){
+        max-height:85rem;
+    }
 }

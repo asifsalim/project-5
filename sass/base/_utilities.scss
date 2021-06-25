@@ -37,6 +37,10 @@
     position: relative;
     margin-bottom: 1rem;
 
+    @include response (Medium-screen){
+        // margin-bottom: 2rem;
+    }
+
     @include response (Small-screen){
        width: 26rem;
     }
