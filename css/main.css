@@ -426,6 +426,12 @@ body {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1600px) {
+  .body-main {
+    width: 80rem;
+  }
+}
+
 @media (max-width: 670px) {
   .body-main {
     max-height: 55rem;

@@ -48,6 +48,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    @include response (XM-Large-screen){
+        width: 80rem;
+    }
 
     @include response (Small-screen){
         max-height: 55rem;
