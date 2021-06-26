@@ -1,7 +1,7 @@
 @mixin  response ($breakpoint) {
 
     @if $breakpoint == Xtra-Large-screen {
-        @media (min-width: 1400px) { @content };
+        @media (min-width: 2000px) { @content };
     }
 
     @if $breakpoint == XM-Large-screen {

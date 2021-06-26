@@ -14,7 +14,7 @@ html {
   font-family: "Rubic",sans-serif;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 2000px) {
   html {
     font-size: 100%;
   }
